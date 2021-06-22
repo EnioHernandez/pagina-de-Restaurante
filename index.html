@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Restaurant</title>
+
+	<!-- Normalize V8.0.1 -->
+	<link rel="stylesheet" href="./css/normalize.css">
+
+	<!-- MDBootstrap V5 -->
+	<link rel="stylesheet" href="./css/mdb.min.css">
+
+	<!-- Font Awesome V5.15.1 -->
+	<link rel="stylesheet" href="./css/all.css">
+
+	<!-- Sweet Alert V10.13.0 -->
+	<script src="./js/sweetalert2.js" ></script>
+
+	<!-- General Styles -->
+	<link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+	<!-- Header -->
+	<header class="header full-box">
+	    <div class="header-brand text-center full-box">
+	        <a href="index.html">
+	        </a>
+	    </div>
+
+	    <div class="header-options full-box">
+	        <nav class="header-navbar full-box poppins-regular font-weight-bold" >
+	            <ul class="list-unstyled full-box">
+	                <li>
+	                    <a href="index.html" >INICIO<span class="full-box" ></span></a>
+	                </li>
+	                <li>
+	                    <a href="menu.html" >MENÚ<span class="full-box" ></span></a>
+	                </li>
+	            </ul>
+	        </nav>
+	        <div class="header-button full-box text-center btn-login-menu" >
+	            <i class="fas fa-user-alt" onclick="show_popup_login()" data-mdb-toggle="tooltip" data-mdb-placement="bottom" title="Login" ></i>
+	            <div class="div-bordered popup-login">
+
+	                <!-- Inicio de sesion -->
+	                <span class="text-center poppins-regular font-weight-bold">Inicio de sesión</span>
+	                <form class="full-box" action="">
+	                    <div class="form-outline mb-4">
+	                        <input type="email" class="form-control" name="login_email_cliente" id="login_email" maxlength="70" required="" placeholder="Email" >
+	                    </div>
+	                    <div class="form-outline mb-4">
+	                        <input type="password" class="form-control" name="login_clave_cliente" id="login_password" pattern="[a-zA-Z0-9$@.-]{7,100}" maxlength="100" required="" placeholder="Contraseña" >
+	                    </div>
+	                    <p class="text-center">
+	                        <button class="btn btn-info btn-sm w-100">Iniciar sesión</button>
+	                    </p>
+	                </form>
+	                <hr>
+	                <p class="text-center full-box">¿No tienes cuenta? <a href="registration.html">Regístrate aquí</a></p>
+
+	            </div>
+	        </div>
+	    </div>
+	</header>
+
+
+	<!-- Content -->
+	<div class="banner">
+	    <div class="banner-body">
+	        <h3 class="text-uppercase">BIENVENIDO A RESTAURANTE CHAMIC</h3>
+	        <p>Los mejores platillos y la mejor calidad los encuentras en RESTAURANTE CHAMIC</p>
+	        <a href="menu.html" class="btn btn-warning"><i class="fas fa-hamburger fa-fw"></i> &nbsp; VER MENÚ</a>
+	    </div>
+	</div>
+
+	<div class="container container-web-page">
+	    <h3 class="text-center text-uppercase poppins-regular font-weight-bold">SERVICIOS DISPONIBLES</h3>
+	    <br>
+	    <div class="row">
+	        <div class="col-12 col-sm-6 col-md-4">
+	            <p class="text-center"><i class="fas fa-shipping-fast fa-5x"></i></p>
+	            <h5 class="text-center text-uppercase poppins-regular font-weight-bold">Envíos a domicilio</h5>
+	            <p class="text-center">Ofrecemos servicios a domicilio a partir de 2 platillos de nuestro menú del dia, contamos con servicio de hasta 2 kilometros de distancia de la hubicación del local.</p>
+	        </div>
+	        <div class="col-12 col-sm-6 col-md-4">
+	            <p class="text-center"><i class="fas fa-utensils fa-5x"></i></p>
+	            <h5 class="text-center text-uppercase poppins-regular font-weight-bold">Ventas al por mayor</h5>
+	            <p class="text-center">Detalles, contamos con ofertas por mayoreo, como tambien con charolas surtidas o parrilladas a un precio especial, o en caso especial puede crear usted una charola y nosotros le brindamos el costo de él mismo.</p>
+	        </div>
+	        <div class="col-12 col-sm-6 col-md-4">
+	            <p class="text-center"><i class="fas fa-store-alt fa-5x"></i></p>
+	            <h5 class="text-center text-uppercase poppins-regular font-weight-bold">Reservaciones de local</h5>
+	            <p class="text-center">Contamos con sistema de apartado en fechas especiales, o si es el caso para un evento en especial contamos con renta del local y disponibilidad de servicios como es comida y decoración de las instalaciones, o si es el caso también de reservación de mesa familiar.</p>
+	        </div>
+	    </div>
+	</div>
+
+	<hr>
+
+	<div class="container-fluid container-web-page">
+	    <h3 class="text-center text-uppercase poppins-regular font-weight-bold">Nuestros platillos más populares</h3>
+	    <div class="container-cards full-box">
+
+	        <div class="card shadow-1-strong">
+	            <img class="card-img-top" src="./assets/platillos/BURRITOS.jpg" alt="nombre_platillo">
+	            <div class="card-body text-center">
+	                <h5 class="card-title font-weight-bold">BURRITOS</h5>
+	                <p class="card-text lead"><span class="badge bg-secondary">$75.00 Y $85 MXN</span></p>
+	            </div>
+	            <div class="card-body text-center">
+	                <!--button type="button" class="btn btn-success btn-sm"><i class="fas fa-shopping-bag fa-fw"></i> &nbsp; Agregar</button-->
+	                &nbsp; &nbsp;
+	                <!--a href="details.html" class="btn btn-info btn-sm"><i class="fas fa-utensils fa-fw"></i> &nbsp; Detalles</a-->
+	            </div>
+	        </div>
+
+	        <div class="card shadow-1-strong">
+	            <img class="card-img-top" src="./assets/platillos/ALAMBRES.jpg" alt="nombre_platillo">
+	            <div class="card-body text-center">
+	                <h5 class="card-title font-weight-bold">ALAMBRES</h5>
+	                <p class="card-text lead"><span class="badge bg-secondary">$90.00 MXN</span></p>
+	            </div>
+	            <div class="card-body text-center">
+	                <!--button type="button" class="btn btn-success btn-sm"><i class="fas fa-shopping-bag fa-fw"></i> &nbsp; Agregar</button-->
+	                &nbsp; &nbsp;
+	                <!--a href="details.html" class="btn btn-info btn-sm"><i class="fas fa-utensils fa-fw"></i> &nbsp; Detalles</a-->
+	            </div>
+	        </div>
+
+	        <div class="card shadow-1-strong">
+	            <img class="card-img-top" src="./assets/platillos/MARISCOS.jpg" alt="nombre_platillo">
+	            <div class="card-body text-center">
+	                <h5 class="card-title font-weight-bold">MARISCOS</h5>
+	                <p class="card-text lead"><span class="badge bg-secondary">$150.00 MXN</span></p>
+	            </div>
+	            <!--div class="card-body text-center">
+	                <button type="button" class="btn btn-success btn-sm"><i class="fas fa-shopping-bag fa-fw"></i> &nbsp; Agregar</button>
+	                &nbsp; &nbsp;
+	                <a href="details.html" class="btn btn-info btn-sm"><i class="fas fa-utensils fa-fw"></i> &nbsp; Detalles</a-->
+	            </div>
+	        </div>
+
+	    </div>
+	    <br>
+	    <p class="text-center"><a href="menu.html" class="btn btn-primary"><i class="fas fa-hamburger fa-fw"></i> &nbsp; Ir al menu</a></p>
+	</div>
+
+	<hr>
+
+	<div class="container container-web-page">
+	    <div class="row justify-content-md-center">
+	        <div class="col-12 col-md-6">
+	            <figure class="full-box">
+	                <img src="./assets/img/registration.png" alt="registration" class="img-fluid">
+	            </figure>
+	        </div>
+	        <div class="w-100"></div>
+	        <div class="col-12 col-md-6">
+	            <h3 class="text-center text-uppercase poppins-regular font-weight-bold">Crea tu cuenta</h3>
+	            <p class="text-justify">
+	                Crea tu cuenta para poder realizar pedidos de platillos hasta la puesta de tu casa, es muy fácil y rápido.
+	            </p>
+	            <p class="text-center">
+	                <a href="registration.html" class="btn btn-primary" >Crear cuenta</a>
+	            </p>
+	        </div>
+	    </div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="footer">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" ></i> COMEDOR CHAMIC 2021</h5></li>
+	                    <li> Negocio Local </li>
+	                </ul>
+	            </div>
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" >CHAMIC</h5></li>
+	                    <li><i class="fas fa-map-marker-alt fa-fw"></i> CHAMIC, FRA. COMALAPA, CARRETERA INTERNACIONAL</li>
+	                </ul>
+	            </div>
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" >Siguenos en:</h5> </li>
+	                    <li>
+
+	                        <a href="https://www.facebook.com/SanGregorioChamic/" class="footer-link" target="_blank" >
+	                            <i class="fab fa-facebook fa-fw"></i> Facebook
+	                        </a>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+	    </div>
+	</footer>
+
+
+	<!-- MDBootstrap V5 -->
+	<script src="./js/mdb.min.js" ></script>
+
+	<!-- General scripts -->
+	<script src="./js/main.js" ></script>
+</body>
+</html>
